@@ -1,19 +1,19 @@
 fileFormatVersion: 2
-guid: 2b7b7bca4da90ef4b92f12f4a304fd14
+guid: 06280dd37cce86c4183dcd5182522d93
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1989386386005600689
-    second: robot idle_0
+      213: -2947338865872819033
+    second: robot idle
   - first:
-      213: 8636570750502954887
-    second: robot idle_1
+      213: -4994157554310793890
+    second: robot idle  (2)_1
   - first:
-      213: 3170168839877969577
-    second: robot idle_2
+      213: 2309039339677165542
+    second: robot idle  (2)_2
   - first:
-      213: 594808997636201885
-    second: robot idle_3
+      213: -3846264558406690757
+    second: robot idle  (2)_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -99,23 +99,11 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: robot idle_0
+      name: robot idle
       rect:
         serializedVersion: 2
         x: 24
@@ -123,41 +111,41 @@ TextureImporter:
         width: 84
         height: 126
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f4653254f974464e0800000000000000
-      internalID: -1989386386005600689
+      spriteID: 7aca2facae2f817d0800000000000000
+      internalID: -2947338865872819033
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: robot idle_1
+      name: robot idle  (2)_1
       rect:
         serializedVersion: 2
         x: 156
         y: 141
         width: 84
-        height: 123
+        height: 126
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 787e14dc6534bd770800000000000000
-      internalID: 8636570750502954887
+      spriteID: e55b8fe1a2031bab0800000000000000
+      internalID: -4994157554310793890
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: robot idle_2
+      name: robot idle  (2)_2
       rect:
         serializedVersion: 2
         x: 24
@@ -165,35 +153,35 @@ TextureImporter:
         width: 84
         height: 126
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9a640fa73c3befb20800000000000000
-      internalID: 3170168839877969577
+      spriteID: 6e72cddab0b5b0020800000000000000
+      internalID: 2309039339677165542
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: robot idle_3
+      name: robot idle  (2)_3
       rect:
         serializedVersion: 2
         x: 156
         y: 0
         width: 84
-        height: 123
+        height: 126
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d9ddf45c1af214800800000000000000
-      internalID: 594808997636201885
+      spriteID: b389ef333c25f9ac0800000000000000
+      internalID: -3846264558406690757
       vertices: []
       indices: 
       edges: []
