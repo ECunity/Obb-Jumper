@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     private bool isGrounded;
+    private bool isMoving;
     private Rigidbody2D rb;
     // Limits x velocity
     private float maxVelX = 10;
@@ -17,6 +18,7 @@ public class PlayerController : MonoBehaviour
     {
         isGrounded = false;
         rb = GetComponent<Rigidbody2D>();
+        isMoving = false;
     }
 
     // Update is called once per frame. FixedUpdate is used for physics (Rigidbody2D)
