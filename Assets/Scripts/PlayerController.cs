@@ -10,13 +10,16 @@ public class PlayerController : MonoBehaviour
     // Limits x velocity
     private float maxVelX = 10;
 
+    private Animator animator;
+
     public float xSpeed;
     public float jumpStrength;
 
     // Start is called before the first frame update
     void Start()
     {
-        isGrounded = false;
+        animator = gameObject.GetComponent<Animator>();
+        isGrounded = true;
         rb = GetComponent<Rigidbody2D>();
         isMoving = false;
     }
@@ -32,6 +35,7 @@ public class PlayerController : MonoBehaviour
         if (isGrounded && yHat == 1) {
             float vy = yHat * jumpStrength;
             isGrounded = false;
+            animator.SetBool("isGrounded", false);
             rb.AddForce(transform.up * vy);
         }
 
@@ -42,5 +46,6 @@ public class PlayerController : MonoBehaviour
     {
         Debug.Log(collision.gameObject.tag);
         isGrounded = collision.gameObject.tag == "Ground";
+        animator.SetBool("isGrounded", isGrounded);
     }
 }
