@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -47,5 +48,10 @@ public class PlayerController : MonoBehaviour
         Debug.Log(collision.gameObject.tag);
         isGrounded = collision.gameObject.tag == "Ground";
         animator.SetBool("isGrounded", isGrounded);
+
+        if (collision.gameObject.tag == "Respawn")
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
     }
 }
