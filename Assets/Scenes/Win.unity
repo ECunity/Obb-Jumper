@@ -300,7 +300,7 @@ GameObject:
   - component: {fileID: 1300996105}
   - component: {fileID: 1300996104}
   m_Layer: 0
-  m_Name: robot bye final
+  m_Name: Robot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
