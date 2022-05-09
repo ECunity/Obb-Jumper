@@ -7,11 +7,13 @@ public class PlayerController : MonoBehaviour
 {
     private bool isGrounded;
     private bool isMoving;
+    private bool isMovingRight;
     private Rigidbody2D rb;
     // Limits x velocity
     private float maxVelX = 10;
 
     private Animator animator;
+    private SpriteRenderer sr;
 
     public float xSpeed;
     public float jumpStrength;
@@ -20,9 +22,11 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         animator = gameObject.GetComponent<Animator>();
+        sr = gameObject.GetComponent<SpriteRenderer>();
         isGrounded = true;
         rb = GetComponent<Rigidbody2D>();
         isMoving = false;
+        isMovingRight= true;
     }
 
     // Update is called once per frame. FixedUpdate is used for physics (Rigidbody2D)
@@ -41,6 +45,20 @@ public class PlayerController : MonoBehaviour
         }
 
         rb.velocity = new Vector2(Vector2.ClampMagnitude(rb.velocity, maxVelX).x, rb.velocity.y);
+
+        if (xHat >= 1) {
+            isMovingRight = true;
+            sr.flipX = false;
+        }
+
+        if (xHat <= -1) {
+            isMovingRight = false;
+            sr.flipX = true;
+        }
+
+        animator.SetBool("isMoving", isMoving);
+        isMoving = xHat != 0 && yHat == 0;
+        Debug.Log(isMoving);
     }
 
     void OnCollisionEnter2D(Collision2D collision)
